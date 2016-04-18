@@ -64,8 +64,8 @@ header {
 }
 
 header .intro-video {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 250px;
+    padding-bottom: 0;
 	margin-bottom: 25px;
     font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 22px;
@@ -104,11 +104,11 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: url(../img/video-cover.jpg);
     background-size: cover; 
-}
+	}
 	
     header .intro-video {
-        padding-top: 425px;
-        padding-bottom: 400px;
+        padding-top: 625px;
+        padding-bottom: 100px;
 		margin-bottom: 25px;
         font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
@@ -116,16 +116,97 @@ video#bgvid {
         line-height: 40px;
     }
 	
-	header .intro-video img{
+	header .intro-video img {
 	height:200px;
 	margin-top:0;
+	}
+	
+	.btn-circle {
+	visibility:visible !important;
+    width: 80px;
+    height: 80px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 100%!important;
+    font-size: 60px;
+	line-height:60px;
+    color: #fff;
+    background: 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
 }
+
+	.btn-circle:hover,
+	.btn-circle:focus {
+		outline: 0;
+		color: #fff;
+		background: rgba(255,255,255,.3);
+	}
+	
+	.btn-circle i.animated {
+		-webkit-transition-property: -webkit-transform;
+		-webkit-transition-duration: 1s;
+		-moz-transition-property: -moz-transform;
+		-moz-transition-duration: 1s;
+	}
+	
+	.btn-circle:hover i.animated {
+		-webkit-animation-name: pulse;
+		-moz-animation-name: pulse;
+		-webkit-animation-duration: 1.5s;
+		-moz-animation-duration: 1.5s;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-timing-function: linear;
+	}
+
 }
+
+@-webkit-keyframes pulse {    
+		0% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+	
+		50% {
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+	
+		100% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+	}
+
+	@-moz-keyframes pulse {    
+		0% {
+			-moz-transform: scale(1);
+			transform: scale(1);
+		}
+	
+		50% {
+			-moz-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+	
+		100% {
+			-moz-transform: scale(1);
+			transform: scale(1);
+		}
+	}
+
+.btn-circle {
+	visibility:hidden;
+	
+}
+
 
 section {
     padding: 40px 0;
 }
-
 
 #about {
 	background-color:#829E3D;
@@ -198,6 +279,24 @@ section {
 	padding:10px 0;
 	
 	}
+	
+
+div.promo-evida {
+	margin:0;
+	padding:0;
+	height:300px;
+	width:100%;
+	
+	}
+	
+@media(min-width:768px) {
+	div.promo-evida {
+	height:310px;
+	padding-top:10px;
+	}
+	
+	
+}
 
 aside.partners {
 	background-color:#fff;
@@ -233,7 +332,7 @@ footer.social {
 	}
 
 footer.legal {
-	background-color:#4D4D4D;
+	background-color:#3D3D3D;
 
 	}
 
